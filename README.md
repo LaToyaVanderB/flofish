@@ -1,8 +1,14 @@
-# Workflow
+# Description
+This module is a light wrapper around the Big-FISH smRA FISH spot detection module:
+
+https://big-fish.readthedocs.io/
+
+The goal is to automate processing and record processing parameters.
+# Expected inputs
 The module expects a directory with:
-- .vsi files
-- the corresponding vsi directories
-- DIC .tif files
+- for the fluorescent channels: .vsi microscopy files and the corresponding vsi directories
+- for the cell outlines: 2D .tif files (e.g. DIC images)
+- a json configuration file containing channel and processing parameters
 # Typical workflow
 1. Batch process inputs to TIF files using flofish (see workflow.ipynb)
 2. Find good segmentation parameters using Omnipose GUI

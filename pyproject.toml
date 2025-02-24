@@ -1,0 +1,41 @@
+[project]
+name = "flofish"
+dynamic = ["version"]
+#version = "0.0.1"
+authors = [
+  {name = "LaToya Vanderbling"},
+  {email = "latoya.vanderbling@gmail.com"},
+]
+description = "Wrapper for BigFish spot detection package"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "big-fish",
+    "omnipose",
+    "scipy",
+    "jsonpickle",
+    "pathlib",
+    "bioio",
+    "bioio_bioformats",
+    "scikit-image",
+    "numpy",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/LaToyaVanderB/flofish"
+
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "flofish.__init__.__version__"}

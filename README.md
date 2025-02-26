@@ -8,10 +8,10 @@ Goal is to automate processing and record processing parameters.
 The module expects a directory containing the following files:
 - Fluorescent channels: .vsi microscopy files and the corresponding vsi directories
 - Cell outlines: 2D .tif files (e.g. DIC images)
-- Configuration: a json file containing channel and processing parameters
+- Configuration: a json file containing channel and processing parameters (see `workflow.ipynb` to download an example)
 # Test data
 Available at: https://zenodo.org/records/14879324
-Can be dowloaded using 
+Can be dowloaded using `workflow.ipynb`
 # Typical workflow
 1. Batch process inputs to TIF files: `flofish/workflow.ipynb`
 2. Find good segmentation parameters using Omnipose GUI

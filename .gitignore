@@ -129,7 +129,7 @@ cython_debug/
 **/_version.py
 
 # ignore image files because they are too large for Git
-**/_tests/data
+**/tests/data
 #*.tif
 #*.vsi
 #*.ets

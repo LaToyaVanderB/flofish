@@ -1,5 +1,5 @@
 # Description
-A light wrapper around the Big-FISH smRA FISH spot detection module:
+A light wrapper around the Big-FISH smRNA FISH spot detection module:
 
 https://big-fish.readthedocs.io/
 
@@ -10,6 +10,12 @@ The module expects a directory containing the following files:
 - Fluorescent channels: .vsi microscopy files and the corresponding vsi directories
 - Cell outlines: 2D .tif files (e.g. DIC images)
 - Configuration: a json file containing channel and processing parameters (see `workflow.ipynb` to download an example)
+
+
+# Installation
+You can install `flofish` via [pip]:
+
+    pip install flofish
 
 # Dependencies
 Dependencies are listed in `pyproject.toml`
